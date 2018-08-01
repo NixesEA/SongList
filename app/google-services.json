@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "466297138332",
+    "firebase_url": "https://songlist-dcad0.firebaseio.com",
+    "project_id": "songlist-dcad0",
+    "storage_bucket": "songlist-dcad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466297138332:android:b247be4ea32a738c",
+        "android_client_info": {
+          "package_name": "com.nixesea.songlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466297138332-gqgt4q3lkiuk2np4hdk2orulup22rv99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nixesea.songlist",
+            "certificate_hash": "0a931a0537047445d6c9a219f7dc9e7a0854c6d3"
+          }
+        },
+        {
+          "client_id": "466297138332-m3pks7djjl228j08l17o158cmbloivss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD-69r88wEBzq_cBZ6JwXiGZ8CDXEP9EM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466297138332-m3pks7djjl228j08l17o158cmbloivss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
