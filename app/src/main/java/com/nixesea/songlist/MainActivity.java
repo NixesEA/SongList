@@ -1,7 +1,6 @@
 package com.nixesea.songlist;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -21,7 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -49,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listView = findViewById(R.id.list);
         listView.setOnItemClickListener(itemClickListener);
 
-        // создаем массив списков
+        //create item array
         songList = new ArrayList<>();
 
         // Write a message to the database
@@ -77,13 +74,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Log.d(TAG, "text = " + arrC.getValue());
 
                         hashMap = new HashMap<>();
-                        hashMap.put(AUTHOR,author );                // Название
-                        hashMap.put(NAME, arrC.getKey());           // Описание
-                        hashMap.put(SONG_TEXT, arrC.getValue());    // Описание
+                        hashMap.put(AUTHOR,author );
+                        hashMap.put(NAME, arrC.getKey());
+                        hashMap.put(SONG_TEXT, arrC.getValue());
+
                         songList.add(hashMap);
                     }
                 }
-
                 updateUI();
             }
 
